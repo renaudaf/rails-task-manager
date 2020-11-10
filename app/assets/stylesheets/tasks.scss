@@ -14,3 +14,18 @@ li {
 a {
  text-decoration: none;
 }
+
+.task-container {
+ background-color: pink;
+ padding: 16px;
+ margin-top: 16px;
+ width: 400px;
+ height: max-content;
+ border: solid red 2px;
+ border-radius: 4px;
+}
+
+.container {
+ align-items: center;
+ background-color: yellow;
+}

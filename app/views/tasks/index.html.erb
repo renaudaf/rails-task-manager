@@ -1,7 +1,9 @@
+<div class="container">
 <h1>My Tasks</h1>
 
 <ul>
   <% @tasks.each do |task| %>
+  <div class="task-container">
     <li>
       <% if task.completed == false %>
         <img src="https://www.flaticon.com/svg/static/icons/svg/25/25235.svg" alt="">
@@ -14,7 +16,9 @@
             method: :delete,
             data: { confirm: "Are you sure?" } %>
     </li>
+  </div>
   <% end %>
 </ul>
 
 <%= link_to  "Add a new task", new_task_path %>
+</div>  
