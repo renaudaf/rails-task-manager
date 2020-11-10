@@ -6,3 +6,10 @@
       <img src="https://toppng.com/uploads/preview/checked-checkbox-icon-checkbox-ico-115632629493xkxpf63d8.png" alt="">
       <% end %> 
 </p>
+
+<%= link_to  "Edit task", edit_task_path %>
+<%= link_to "Delete",
+            task_path(@task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+<%= link_to  "Back to list", tasks_path %>
