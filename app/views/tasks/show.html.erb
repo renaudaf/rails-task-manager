@@ -1,13 +1,8 @@
-<h1>My Tasks</h1>
-
-<ul>
-  <% @tasks.each do |task| %>
-    <li><% if task.completed == false %>
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+<p><% if @task.completed == false %>
       <img src="https://www.flaticon.com/svg/static/icons/svg/25/25235.svg" alt="">
       <% else %>
       <img src="https://toppng.com/uploads/preview/checked-checkbox-icon-checkbox-ico-115632629493xkxpf63d8.png" alt="">
       <% end %> 
-     <%= link_to task.title, task_path(task)%></li>
-  <% end %>
-</ul>
-
+</p>
